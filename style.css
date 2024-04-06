@@ -1,0 +1,358 @@
+body {
+    font-size: 1.2rem;
+    overflow-x: hidden;
+}
+
+/* nav */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.navbar-toggler-icon{
+    background: rgba(0, 0, 0, 0);
+    color: blanchedalmond;
+    font-size: 1.6rem;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-brand{
+    font-family: "Rubik Doodle Shadow";
+    font-size: 1.6rem;
+    color: blanchedalmond;
+}
+nav h5 {
+    font-family: "Rubik Doodle Shadow";
+}
+/* Pembuka */
+.pembuka {
+    margin-top: -4.1rem;
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+.sixpanams {
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin: auto;
+    width: 70%;
+}
+.pembuka .text-box {
+    margin: auto;
+}
+.pembuka h1 {
+    font-family: "Rubik Doodle Shadow";
+    color: blanchedalmond;
+    text-align: right;
+    position: relative;
+}
+.pembuka p {
+    color: blanchedalmond;
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 20px;
+}
+.pembuka .logo{
+    width: 51%;
+    float: left;
+    margin-right: 500px;
+}
+/* story */
+.story {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(img/ff.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.story h1 {
+    text-align: center;
+    padding-top: 5rem;
+}
+.hp {
+    width: 14%;
+    position: absolute;
+    rotate: 340deg;
+    right: 18rem;
+    filter: drop-shadow(20px 15px 20px #000000);
+    cursor: pointer;
+}
+.buku:hover {
+    border: none;
+    transform: scale(1.07);
+}
+.hp:hover {
+    border: none;
+    transform: scale(1.07);
+}
+.buku {
+    width: 30%;
+    position: absolute;
+    z-index: -1;
+    bottom: -14rem;
+    left: 3rem;
+    rotate: 30deg;
+    filter: drop-shadow(50px -10px 20px #000000);
+}
+.bt {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    scale: 100;
+    pointer-events: none;
+}
+/* memories */
+.memories {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.memories h1 {
+    font-family: "Rubik Doodle Shadow";
+    color: blanchedalmond;
+    text-align: center;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+/* card */
+.card {
+    width: 280px;
+    height: 380px;
+    background: white;
+    border-radius: 32px;
+    padding: 20px;
+    position: relative;
+    box-shadow: #604b4a30 0px 70px 30px -50px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    scale: 0.85;
+  } 
+
+  .card .profile-pic {
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 3px;
+    border-radius: 29px;
+    z-index: 1;
+    border: 0px solid pink;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card .profile-pic img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .card .profile-pic svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transform-origin: 45% 20%;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .card .bottom {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    background: pink;
+    top: 80%;
+    border-radius: 29px;
+    z-index: 2;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px inset;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  
+  .card .bottom .content {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 160px;
+  }
+  
+  .card .bottom .content .name {
+    display: block;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  .card .bottom .content .about-me {
+    display: block;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+  }
+  
+  .card .bottom .bottom-bottom {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card .bottom .bottom-bottom .social-links-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .card .bottom .bottom-bottom .social-links-container svg {
+    height: 20px;
+    fill: rgb(0, 0, 0);
+    filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
+  }
+  
+  .card .bottom .bottom-bottom .social-links-container svg:hover {
+    fill: rgb(255, 255, 255);
+    transform: scale(1.2);
+  }
+  
+  .card .bottom .bottom-bottom .button {
+    background: white;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    padding: 0.4rem 0.6rem;
+    box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
+  }
+  
+  .card .bottom .bottom-bottom .button:hover {
+    background: rgb(255, 255, 255);
+    color: white;
+  }
+  
+  .card:hover {
+    border-top-left-radius: 55px;
+  }
+  
+  .card:hover .bottom {
+    top: 20%;
+    border-radius: 80px 29px 29px 29px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  }
+  
+  .card:hover .profile-pic {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 7px solid pink;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
+    transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+  }
+  
+  .card:hover .profile-pic:hover {
+    transform: scale(1.3);
+    border-radius: 0px;
+  }
+  
+  .card:hover .profile-pic img {
+    transform: scale(2.5);
+    -o-object-position: 0px 25px;
+    object-position: 0px 25px;
+    transition: all 0.5s ease-in-out 0.5s;
+  }
+  
+  .card:hover .profile-pic svg {
+    transform: scale(2.5);
+    transition: all 0.5s ease-in-out 0.5s;
+  }
+  
+/* media quary */
+@media (max-width: 996px) {
+    html {
+        font-size:70%
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size:60%
+    }
+}
+
+
+@media (max-width: 576px) {
+    html {
+        font-size:100%
+    }
+    .pembuka {
+        background-image: url(img/logo.jfif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    }
+    .sixpanams {
+        column-count: unset;
+        -webkit-column-count: unset;
+    }
+    .sixpanams h1 {
+        font-size: 110%;
+        text-align: center;
+    }
+    .sixpanams p {
+        font-size: 50%;
+        text-align: center;
+    }
+    .sixpanams .logo {
+        position: relative;
+        width: 65%;
+        float: none;
+        margin-right: -500px;
+        margin-bottom: 100px;
+        opacity: 0;
+    }
+    .buku {
+        width: 50%;
+        position: absolute;
+        z-index: -1;
+        bottom: -7.5rem;
+        left: 0;
+        rotate: 30deg;
+    }
+    .hp {
+        width: 25%;
+        position: absolute;
+        rotate: 340deg;
+        right: 8rem;
+        cursor: pointer;
+    }
+    .card {
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+}
+
