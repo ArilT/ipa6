@@ -2,7 +2,6 @@ body {
     font-size: 1.2rem;
     overflow-x: hidden;
 }
-
 /* nav */
 .navbar {
     background-color: rgba(0, 0, 0, 0.7) !important;
@@ -128,7 +127,6 @@ nav h5 {
     background-color: black;
     background-clip: text;
 }
-
 /* card */
 .memories .card {
     width: 280px;
@@ -145,7 +143,6 @@ nav h5 {
     scale: 0.85;
     filter: drop-shadow(20px 15px 20px #000000) brightness(0.8);
   } 
-
   .card .profile-pic {
     position: absolute;
     width: calc(100% - 6px);
@@ -161,7 +158,6 @@ nav h5 {
     background-size: cover;
     filter: grayscale(1) ;
   }
-  
   .card .profile-pic img {
     -o-object-fit: cover;
     object-fit: cover;
@@ -171,7 +167,6 @@ nav h5 {
     object-position: 0px 0px;
     transition: all 0.5s ease-in-out 0s;
   }
-  
   .card .profile-pic svg {
     width: 100%;
     height: 100%;
@@ -182,7 +177,6 @@ nav h5 {
     transform-origin: 45% 20%;
     transition: all 0.5s ease-in-out 0s;
   }
-  
   .card .bottom {
     position: absolute;
     bottom: 3px;
@@ -197,7 +191,6 @@ nav h5 {
     transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     border: 4px solid lightgrey;
   }
-  
   .card .bottom .content {
     position: absolute;
     bottom: 0;
@@ -206,21 +199,18 @@ nav h5 {
     bottom: 4rem;
     height: 160px;
   }
-  
   .card .bottom .content .name {
     display: block;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-weight: bold;
   }
-  
   .card .bottom .content .about-me {
     display: block;
     font-size: 0.9rem;
     color: rgb(0, 0, 0);
     margin-top: 1rem;
   }
-  
   .card .bottom .bottom-bottom {
     position: absolute;
     bottom: 1.5rem;
@@ -230,23 +220,19 @@ nav h5 {
     align-items: center;
     justify-content: center;
   }
-  
   .card .bottom .bottom-bottom .social-links-container {
     display: flex;
     gap: 1rem;
-  }
-  
+  } 
   .card .bottom .bottom-bottom .social-links-container svg {
     height: 20px;
     fill: rgb(0, 0, 0);
     filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
   }
-  
   .card .bottom .bottom-bottom .social-links-container svg:hover {
     fill: rgb(255, 255, 255);
     transform: scale(1.2);
   }
-  
   .card .bottom .bottom-bottom .button {
     background: white;
     color: rgb(255, 255, 255);
@@ -256,7 +242,6 @@ nav h5 {
     padding: 0.4rem 0.6rem;
     box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
   }
-  
   .card .bottom .bottom-bottom .button:hover {
     background: rgb(255, 255, 255);
     color: white;
@@ -265,13 +250,11 @@ nav h5 {
   .memories .card:hover {
     border-top-left-radius: 55px;
   }
-  
   .card:hover .bottom {
     top: 20%;
     border-radius: 80px 29px 29px 29px;
     transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
   }
-  
   .card:hover .profile-pic {
     width: 100px;
     height: 100px;
@@ -284,25 +267,20 @@ nav h5 {
     box-shadow: rgb(0, 0, 0) 0px 5px 5px 0px;
     transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
   }
-  
   .card:hover .profile-pic:hover {
     transform: scale(1.3);
     border-radius: 0px;
   }
-  
   .card:hover .profile-pic img {
     transform: scale(2.5);
     -o-object-position: 0px 25px;
     object-position: 0px 25px;
     transition: all 0.5s ease-in-out 0.5s;
   }
-  
   .card:hover .profile-pic svg {
     transform: scale(2.5);
     transition: all 0.5s ease-in-out 0.5s;
   }
-
-
 /* galery */
 .galery {
   min-height: 100vh;
@@ -312,7 +290,6 @@ nav h5 {
   position: relative;
   overflow: hidden;
 }
-
 .galery a {
   width: 198px;
   height: 269px;
@@ -320,8 +297,6 @@ nav h5 {
   background-size: cover;
   margin: 1rem auto;
 }
-
-
 .galery h1 {
   font-family: "Rubik Doodle Shadow";
   color: blanchedalmond;
@@ -333,21 +308,258 @@ nav h5 {
   background-color: black;
   background-clip: text;
 }
+/* foto */
+.card#n1 .profile-pic {
+  background-image: url(IPAft/n1.JPG);
+}
+.card#n2 .profile-pic {
+  background-image: url(IPAft/n2.JPG);
+}
+.card#n2:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n2 .bottom {
+  background: aqua;
+}
+.card#n3 .profile-pic {
+  background-image: url(IPAft/n3.JPG);
+}
+.card#n4 .profile-pic {
+  background-image: url(IPAft/n4.JPG);
+}
+.card#n4:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n4 .bottom {
+  background: aqua;
+}
+.card#n5 .profile-pic {
+  background-image: url(IPAft/n5.jfif);
+  filter: none;
+}
+.card#n5 {
+  filter: brightness(1);
+}
+.card#n6 .profile-pic {
+  background-image: url(IPAft/n6.JPG);
+}
+.card#n7 .profile-pic {
+  background-image: url(IPAft/n7.JPG);
+}
+.card#n7:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n7 .bottom {
+  background: aqua;
+}
+.card#n8 .profile-pic {
+  background-image: url(IPAft/n8.JPG);
+}
+.card#n8:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n8 .bottom {
+  background: aqua;
+}
+.card#n9 .profile-pic {
+  background-image: url(IPAft/n9.png);
+  filter: none;
+}
+.card#n10 .profile-pic {
+  background-image: url(IPAft/n10.JPG);
+}
+.card#n10:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n10 .bottom {
+  background: aqua;
+}
+.card#n11 .profile-pic {
+  background-image: url(IPAft/n11.jfif);
+  filter: none;
+}
+.card#n11:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n11 .bottom {
+  background: aqua;
+}
 
+.card#n12 .profile-pic {
+  background-image: url(IPAft/n12.JPG);
+}
+.card#n12:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n12 .bottom {
+  background: aqua;
+}
+
+.card#n13 .profile-pic {
+  background-image: url(IPAft/n13.JPG);
+}
+.card#n14 .profile-pic {
+  background-image: url(IPAft/n14.JPG);
+}
+.card#n15 .profile-pic {
+  background-image: url(IPAft/n15.JPG);
+}
+.card#n16 .profile-pic {
+  background-image: url(IPAft/n16.JPG);
+}
+.card#n17 .profile-pic {
+  background-image: url(IPAft/n17.JPG);
+}
+.card#n17:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n17 .bottom {
+  background: aqua;
+}
+.card#n18 .profile-pic {
+  background-image: url(IPAft/n18.JPG);
+}
+.card#n19 .profile-pic {
+  background-image: url(IPAft/n19.JPG);
+}
+.card#n20 .profile-pic {
+  background-image: url(IPAft/n20.JPG);
+}
+.card#n20:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n20 .bottom {
+  background: aqua;
+}
+.card#n21 .profile-pic {
+  background-image: url(IPAft/n21.JPG);
+}
+.card#n22 .profile-pic {
+  background-image: url(IPAft/n22.JPG);
+}
+.card#n22:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n22 .bottom {
+  background: aqua;
+}
+.card#n23 .profile-pic {
+  background-image: url(IPAft/n23.JPG);
+}
+.card#n23:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n23 .bottom {
+  background: aqua;
+}
+.card#n24 .profile-pic {
+  background-image: url(IPAft/n24.JPG);
+}
+.card#n25 .profile-pic {
+  background-image: url(IPAft/n25.JPG);
+}
+.card#n26 .profile-pic {
+  background-image: url(IPAft/n26.JPG);
+}
+.card#n27 .profile-pic {
+  background-image: url(IPAft/n27.JPG);
+}
+.card#n28 .profile-pic {
+  background-image: url(IPAft/n28.JPG);
+}
+.card#n29 .profile-pic {
+  background-image: url(IPAft/n29.JPG);
+}
+.card#n30 .profile-pic {
+  background-image: url(IPAft/n30.JPG);
+}
+.card#n30:hover .profile-pic {
+  border: 4px solid aqua;
+}
+.card#n30 .bottom {
+  background: aqua;
+}
+.card#n31 .profile-pic {
+  background-image: url(IPAft/n31.JPG);
+}
+.card#n32 .profile-pic {
+  background-image: url(IPAft/n32.JPG);
+}
+.card#n33 .profile-pic {
+  background-image: url(IPAft/n33.JPG);
+}
+.card#n34 .profile-pic {
+  background-image: url(IPAft/n34.JPG);
+}
+.card#n35 .profile-pic {
+  background-image: url(IPAft/n35.JPG);
+}
+.card#n36 .profile-pic {
+  background-image: url(IPAft/n36.JPG);
+}
+.card#n36 {
+  margin: auto;
+}
+/* classx */
+.galerys#n1 {
+  background-image: url(galery/j1.jpeg);
+}
+.galerys#n2 {
+  background-image: url(galery/j2.jpeg);
+}
+.galerys#n3 {
+  background-image: url(galery/j3.jpeg);
+}
+.galerys#n4 {
+  background-image: url(galery/j4.jpeg);
+}
+.galerys#n5 {
+  background-image: url(galery/j5.jpeg);
+}
+.galerys#n6 {
+  background-image: url(galery/j6.jpeg);
+}
+.galerys#n7 {
+  background-image: url(galery/j7.png);
+}
+.galerys#n8 {
+  background-image: url(galery/j8.jpeg);
+}
+.galerys#n9 {
+  background-image: url(galery/v2.png);
+}
+.galerys#n10 {
+  background-image: url(galery/v3.png);
+}
+.galerys#n11 {
+  background-image: url(galery/v4.png);
+}
+.galerys#n12 {
+  background-image: url(galery/v5.png);
+}
+.galerys#n13 {
+  background-image: url(galery/v1.png);
+}
+.galerys#n14 {
+  background-image: url(galery/j9.jpeg);
+}
+.galerys#n15 {
+  background-image: url(galery/v6.png);
+}
+.galerys#n16 {
+  background-image: url(galery/j10.jpg);
+}
 /* media quary */
 @media (max-width: 996px) {
     html {
         font-size:70%
     }
 }
-
 @media (max-width: 768px) {
     html {
         font-size:60%
     }
 }
-
-
 @media (max-width: 576px) {
     html {
         font-size:100%;
@@ -401,6 +613,5 @@ nav h5 {
     .galery a {
       margin-bottom: 2rem;
     }
-
 }
 
