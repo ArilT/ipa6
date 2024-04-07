@@ -310,7 +310,7 @@ nav h5 {
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .galery a {
