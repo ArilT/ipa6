@@ -319,6 +319,7 @@ nav h5 {
   background-position: center;
   background-size: cover;
   margin: 1rem auto;
+    overflow: hidden;
 }
 
 
