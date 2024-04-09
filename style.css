@@ -26,13 +26,16 @@ nav h5 {
 .pembuka {
     position: relative;
     min-height: 100vh;
-    background-size: cover;
-    background: black;
+    background-repeat: repeat;
+    background: url(img/ff.jpg);
     display: flex;
     flex-direction: column;
 }
+.logo {
+  border-radius: 50%;
+  filter: brightness(0.8) drop-shadow(15px 15px 5px black);
+}
 .sixpanams {
-    -webkit-column-count: 2;
     column-count: 2;
     margin: auto;
     width: 70%;
@@ -45,6 +48,7 @@ nav h5 {
     color: blanchedalmond;
     text-align: right;
     position: relative;
+    filter: drop-shadow(10px 10px 8px black);
 }
 .pembuka p {
     color: blanchedalmond;
@@ -56,6 +60,8 @@ nav h5 {
     width: 51%;
     float: left;
     margin-right: 500px;
+    justify-content: center;
+    align-items: center;
 }
 /* story */
 .story {
@@ -106,18 +112,17 @@ nav h5 {
 .memories {
     position: relative;
     min-height: 100vh;
-    background: url(img/bg1.jpg);
+    background: url(img/hhh.jpg);
     display: flex;
     flex-direction: column;
     z-index: 2;
     filter: brightness(0.8);
     background-position: top;
-    background-repeat: repeat-y;
-    background-size: contain;
+    background-repeat: repeat;
 }
 .memories h1 {
     font-family: "Rubik Doodle Shadow";
-    color: rgb(0, 0, 0);
+    color: blanchedalmond;
     text-align: center;
     font-weight: bold;
     position: relative;
@@ -140,7 +145,7 @@ nav h5 {
     margin-bottom: 1.5rem;
     margin: auto;
     scale: 0.85;
-    filter: drop-shadow(20px 15px 20px #000000) brightness(0.8);
+    filter: drop-shadow(20px 15px 20px #000000);
   } 
   .card .profile-pic {
     position: absolute;
@@ -155,7 +160,7 @@ nav h5 {
     transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
     background-position: center;
     background-size: cover;
-    filter: grayscale(1) ;
+    filter: grayscale(1) brightness(0.8) ;
   }
   .card .profile-pic img {
     -o-object-fit: cover;
@@ -283,7 +288,7 @@ nav h5 {
 /* galery */
 .galery {
   min-height: 100vh;
-  background-color: #000000;
+  background-image: url(img/gg.jpg);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -295,6 +300,12 @@ nav h5 {
   background-position: center;
   background-size: cover;
   margin: 1rem auto;
+  border: 6px solid black;
+  border-radius: 25px; 
+  filter: drop-shadow(10px 10px 8px black);
+}
+.galery .card {
+  border: none;
 }
 .galery h1 {
   font-family: "Rubik Doodle Shadow";
@@ -324,9 +335,6 @@ nav h5 {
   background-image: url(IPAft/n3.JPG);
   filter: none;
 }
-.card#n3 {
-  filter: brightness(1);
-}
 .card#n4 .profile-pic {
   background-image: url(IPAft/n4.JPG);
   filter: unset;
@@ -337,23 +345,17 @@ nav h5 {
 .card#n4 .bottom {
   background: aqua;
 }
-.card#n4 {
-  filter: brightness(1);
-}
+
 .card#n5 .profile-pic {
   background-image: url(IPAft/n5.jfif);
   filter: none;
 }
-.card#n5 {
-  filter: brightness(1);
-}
+
 .card#n6 .profile-pic {
   background-image: url(IPAft/n6.JPG);
   filter: none;
 }
-.card#n6 {
-  filter: brightness(1);
-}
+
 .card#n7 .profile-pic {
   background-image: url(IPAft/n7.JPG);
 }
@@ -376,9 +378,6 @@ nav h5 {
   background-image: url(IPAft/n9.png);
   filter: none;
 }
-.card#n9 {
-  filter: brightness(1);
-}
 .card#n10 .profile-pic {
   background-image: url(IPAft/n10.JPG);
 }
@@ -398,9 +397,6 @@ nav h5 {
 .card#n11 .bottom {
   background: aqua;
 }
-.card#n11 {
-  filter: brightness(1);
-}
 .card#n12 .profile-pic {
   background-image: url(IPAft/n12.JPG);
 }
@@ -414,15 +410,9 @@ nav h5 {
   background-image: url(IPAft/n13.JPG);
   filter: none;
 }
-.card#n13 {
-  filter: brightness(1);
-}
 .card#n14 .profile-pic {
   background-image: url(IPAft/n14.JPG);
   filter: none;
-}
-.card#n14 {
-  filter: brightness(1);
 }
 .card#n15 .profile-pic {
   background-image: url(IPAft/n15.JPG);
@@ -441,6 +431,7 @@ nav h5 {
 }
 .card#n18 .profile-pic {
   background-image: url(IPAft/n18.JPG);
+  filter: none;
 }
 .card#n19 .profile-pic {
   background-image: url(IPAft/n19.JPG);
@@ -448,9 +439,6 @@ nav h5 {
 .card#n20 .profile-pic {
   background-image: url(IPAft/n20.JPG);
   filter: none;
-}
-.card#n20 {
-  filter: brightness(1);
 }
 .card#n20:hover .profile-pic {
   border: 4px solid aqua;
@@ -474,9 +462,6 @@ nav h5 {
   background-image: url(IPAft/n23.JPG);
   filter: none;
 }
-.card#n23 {
-  filter: brightness(1);
-}
 .card#n23:hover .profile-pic {
   border: 4px solid aqua;
 }
@@ -487,11 +472,9 @@ nav h5 {
   background-image: url(IPAft/n24.JPG);
   filter: none;
 }
-.card#n24 {
-  filter: brightness(1);
-}
 .card#n25 .profile-pic {
   background-image: url(IPAft/n25.JPG);
+  filter: none;
 }
 .card#n26 .profile-pic {
   background-image: url(IPAft/n26.JPG);
@@ -501,9 +484,11 @@ nav h5 {
 }
 .card#n28 .profile-pic {
   background-image: url(IPAft/n28.JPG);
+  filter: none;
 }
 .card#n29 .profile-pic {
   background-image: url(IPAft/n29.JPG);
+  filter: none;
 }
 .card#n30 .profile-pic {
   background-image: url(IPAft/n30.JPG);
@@ -520,9 +505,6 @@ nav h5 {
 .card#n32 .profile-pic {
   background-image: url(IPAft/n32.JPG);
   filter: none;
-}
-.card#n32 {
-  filter: brightness(1);
 }
 .card#n33 .profile-pic {
   background-image: url(IPAft/n33.JPG);
@@ -588,6 +570,209 @@ nav h5 {
 .galerys#n16 {
   background-image: url(galery/j10.jpg);
 }
+/* ClassXI */
+.galerys2#n1 {
+  background-image: url(galery2/j1.jpeg);
+}
+.galerys2#n2 {
+  background-image: url(galery2/j2.png);
+}
+.galerys2#n3 {
+  background-image: url(galery2/j3.jpeg);
+}
+.galerys2#n4 {
+  background-image: url(galery2/j4.jpeg);
+}
+.galerys2#n5 {
+  background-image: url(galery2/j5.png);
+}
+.galerys2#n6 {
+  background-image: url(galery2/j6.png);
+}
+.galerys2#n7 {
+  background-image: url(galery2/j7.jpeg);
+}
+.galerys2#n8 {
+  background-image: url(galery2/j9.jpeg);
+}
+.galerys2#n9 {
+  background-image: url(galery2/j10.jpeg)
+}
+.galerys2#n10 {
+  background-image: url(galery2/j11.jpeg);
+}
+.galerys2#n11 {
+  background-image: url(galery2/j12.jpeg)
+}
+.galerys2#n12 {
+  background-image: url(galery2/j13.jpeg);
+}
+.galerys2#n13 {
+  background-image: url(galery2/j14.jpeg);
+}
+.galerys2#n14 {
+  background-image: url(galery2/j15.jpeg);
+}
+.galerys2#n15 {
+  background-image: url(galery2/j16.jpeg);
+}
+.galerys2#n16 {
+  background-image: url(galery2/j17.png);
+}
+.galerys2#n17 {
+  background-image: url(galery2/j18.jpeg);
+}
+.galerys2#n18 {
+  background-image: url(galery2/j19.jpeg);
+}
+.galery2#n19 {
+  background-image: url(galery2/j20.png);
+}
+.galerys2#n20 {
+  background-image: url(galery2/j21.png);
+}
+.galerys2#n21 {
+  background-image: url(galery2/j22.png);
+}
+.galerys2#n22 {
+  background-image: url(galery2/j23.jpeg);
+}
+.galerys2#n23 {
+  background-image: url(galery2/j24.jpeg);
+}
+.galerys2#n24 {
+  background-image: url(galery2/j25.png);
+}
+.galerys2#n25 {
+  background-image: url(galery2/j26.jpeg);
+}
+.galerys2#n26 {
+  background-image: url(galery2/j27.png);
+}
+.galerys2#n27 {
+  background-image: url(galery2/j28.png);
+}
+.galerys2#n28 {
+  background-image: url(galery2/j29.png);
+}
+.galerys2#n29 {
+  background-image: url(galery2/j30.jpeg);
+}
+.galerys2#n30 {
+  background-image: url(galery2/j31.jpeg);
+}
+.galerys2#n31 {
+  background-image: url(galery2/j32.jpeg);
+}
+.galerys2#n32 {
+  background-image: url(galery2/j33.jpeg);
+}
+/* jatuh */
+/* leaves */
+.set {
+  position: absolute; width: 100%; height: 100%;
+  top:0; left: 0; pointer-events: none;
+  z-index: -1;
+  min-height: 300vh;
+  transform: scale(2);
+}
+.set img {
+  height: 20px; width: auto;
+}
+.set div {
+  position: absolute;
+  display: block;
+}
+.set2 {
+  position: absolute; width: 100%; height: 100%;
+  top:0; left: 0; pointer-events: none;
+  z-index: -1;
+  min-height: 200vh;
+  filter: blur(0.5px);
+  transform: scale(-3); rotate: 180deg;
+}
+
+.set2 img {
+  height: 15px; width: auto;
+}
+.set2 div {
+  position: absolute;
+  display: block;
+}
+.set div:nth-child(1) {
+  left:10%; animation: animate 22s linear infinite;
+}
+.set div:nth-child(2) {
+  left:20%; animation: animate 24s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(3) {
+  left:30%; animation: animate 28s linear infinite;
+}
+.set div:nth-child(4) {
+  left:40%; animation: animate 26s linear infinite;
+  animation-delay: -3s;
+}
+.set div:nth-child(5) {
+  left:50%; animation: animate 21s linear infinite;
+  animation-delay: -2s;
+}
+.set div:nth-child(6) {
+  left:60%; animation: animate 23s linear infinite;
+  animation-delay: -1s;
+}
+.set div:nth-child(7) {
+  left:70%; animation: animate 22s linear infinite;
+}
+.set div:nth-child(8) {
+  left:80%; animation: animate 20s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(9) {
+  left:90%; animation: animate 24s linear infinite;
+  animation-delay: -3s;
+}
+.set div:nth-child(10) {
+  left:95%; animation: animate 21s linear infinite;
+  animation-delay: -2s;
+}
+.set2 div:nth-child(1) {
+  left:10%; animation: animate 22s linear infinite;
+}
+.set2 div:nth-child(2) {
+  left:20%; animation: animate 24s linear infinite;
+  animation-delay: -7s;
+}
+.set2 div:nth-child(3) {
+  left:30%; animation: animate 28s linear infinite;
+}
+.set2 div:nth-child(4) {
+  left:40%; animation: animate 26s linear infinite;
+  animation-delay: -3s;
+}
+.set2 div:nth-child(5) {
+  left:50%; animation: animate 21s linear infinite;
+  animation-delay: -2s;
+}
+.set2 div:nth-child(6) {
+  left:60%; animation: animate 23s linear infinite;
+  animation-delay: -1s;
+}
+.set2 div:nth-child(7) {
+  left:70%; animation: animate 22s linear infinite;
+}
+.set2 div:nth-child(8) {
+  left:80%; animation: animate 30s linear infinite;
+  animation-delay: -7s;
+}
+.set2 div:nth-child(9) {
+  left:90%; animation: animate 24s linear infinite;
+  animation-delay: -3s;
+}
+.set2 div:nth-child(10) {
+  left:95%; animation: animate 21s linear infinite;
+  animation-delay: -2s;
+}
 /* media quary */
 @media (max-width: 996px) {
     html {
@@ -604,12 +789,6 @@ nav h5 {
         font-size:100%;
         overflow-x: hidden;
     }
-    .pembuka {
-        background-image: url(img/logo.jfif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 50%;
-    }
     .sixpanams {
         column-count: unset;
         -webkit-column-count: unset;
@@ -625,11 +804,10 @@ nav h5 {
     }
     .sixpanams .logo {
         position: relative;
-        width: 65%;
-        float: none;
-        margin-right: -500px;
-        margin-bottom: 100px;
-        opacity: 0;
+        width: 100%;
+        opacity: 10;
+        margin: auto;
+        align-items: center;
     }
     .buku {
         width: 50%;
@@ -653,5 +831,11 @@ nav h5 {
     .galery a {
       margin-bottom: 1rem;
     }
+    .set2 {
+      position: absolute; width: 100%; height: auto;
+  }
+  .set {
+      position: absolute; width: 100%; height: auto;
+  }
 }
 
